@@ -24,7 +24,7 @@
     <p>Esse é um texto em <b>negrito.</b></p>  
     <p>Esse é um texto <i>itálico.</i></p>  
     <p>Esse é um texto <u>sublinhado.</u></p>
-    <p>Para realizar um comentário no HTML, basta digitar "(!-- comentário --)"</p>
+    <p>Para realizar um comentário no HTML, basta digitar "&lt;!-- comentário --&gt;"</p>
 
     <hr>
 
@@ -62,6 +62,78 @@
     <a href="">Home</a>
     /
     <a href="contato.html">Contato</a>
+
+    <hr>
+
+    <h2>Tabelas</h2>
     
+        <table border="1" width="500">
+            <tr>
+                <th>Código</th>
+                <th>Produto</th>
+                <th>Preço</th>
+            </tr>
+            <tr>
+                <td>001</td>
+                <td>Notebook</td>
+                <td>2.999,99</td>
+            </tr>
+            <tr>
+                <td>002</td>
+                <td>Celular</td>
+                <td>1.999,99</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td colspan="2">R$4999,98</td>
+            </tr>
+        </table>
+
+    <p>Nas tabelas, o "th" indica que a os nomes inseridos dentro dessa TAG serão os "títulos" das tableas hipoteticamente criadas, por isso ficam em negrito.</p>
+
+    <hr>
+
+    <h2>Formulários</h2>
+    <h3>Login</h3>
+
+    <form>
+        Email:<br>
+        <input type="text" name="Login"><br>
+       
+        Senha:<br>
+        <input type="password" name="Senha"><br><br>
+        
+        <input type="button" value="Logar">
+    </form>
+
+    <h3>Cadastro</h3>
+
+    <form>
+        Login:<br>
+        <input type="text" name="Login"><br><br>
+
+        Gênero:<br>
+        <input type="radio" name="Gênero" value="M">Masculino<br>
+        <input type="radio" name="Gênero" value="F">Feminino<br><br>
+
+        Interesses:<br>
+        <input type="checkbox" name="Interesses">Futebol<br>
+        <input type="checkbox" name="Interesses">Vôlei<br>
+        <input type="checkbox" name="Interesses">Basquete<br><br>
+
+        Estado:<br>
+        <select name="Estado">
+            <option value="sp">SP</option>
+            <option value="rj">RJ</option>
+            <option value="mg">MG</option>
+        </select><br><br>
+
+        Observações:<br>
+        <textarea name="" id="" cols="50" rows="5"></textarea><br><br>
+
+        <input type="submit" value="Cadastrar">
+    </form>
+
+
 </body>
 </html>
